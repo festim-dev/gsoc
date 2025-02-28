@@ -66,3 +66,51 @@ High
 - [FESTIM GitHub Repository](https://github.com/festim-dev/FESTIM)
 - [OpenFOAM Official Website](https://www.openfoam.com/)
 - [FEniCSx Documentation](https://fenicsproject.org/)
+
+## Project Idea II - Coupling FESTIM with OpenMC for Neutronics Integration
+
+> **Abstract 🗂**
+
+Understanding the effects of neutron irradiation is crucial for predicting material behavior in nuclear fusion reactors. OpenMC is a state-of-the-art Monte Carlo code that performs neutron transport simulations and can calculate heat deposition and tritium production rates. This project aims to couple OpenMC with FESTIM to enable the import of neutron-induced heat sources and tritium production rates into FESTIM simulations. This integration will enhance FESTIM's capability to model the impact of neutron irradiation on hydrogen transport in materials.
+
+> **Tasks 📝**
+
+- **Investigate Coupling Strategies:** Research existing multiphysics coupling methodologies between OpenMC and other simulation tools, such as MOOSE, to inform the development of a coupling interface with FESTIM. ([cardinal.cels.anl.gov](https://cardinal.cels.anl.gov/tutorials/openmc_solid.html?utm_source=chatgpt.com))
+
+- **Develop Coupling Interface:** Implement a robust interface that facilitates the transfer of neutron heating and tritium production data from OpenMC to FESTIM.
+
+- **Extend FESTIM Functionality:** Modify FESTIM to incorporate neutron-induced heat sources and tritium production rates into its simulations.
+
+- **Validation and Testing:** Validate the coupled simulation framework against benchmark problems and experimental data to ensure accuracy.
+
+- **Documentation and Tutorials:** Document the coupling process and develop tutorials to assist users in utilizing the new features.
+
+> **Extended Tasks 📝**
+
+- **Optimization for Performance:** Enhance the efficiency of data transfer and simulation runtime for large-scale problems.
+
+- **Application to Fusion Reactor Models:** Apply the coupled OpenMC-FESTIM framework to realistic fusion reactor component simulations to assess material performance under neutron irradiation.
+
+> **Project Length ⏰**
+
+175 hours
+
+> **Priority ⏩**
+
+High
+
+> **Complexity 👨🏻‍💻**
+
+High
+
+> **Potential Mentors 😇**
+
+- [Remi Delaporte-Mathurin](mailto:remidm@mit.edu)
+- [Jon Shimwell](mailto:jon@proximafusion.com)
+
+> **Related Links 🔗**
+
+- [FESTIM GitHub Repository](https://github.com/festim-dev/FESTIM)
+- [OpenMC Official Website](https://openmc.org/)
+- [OpenMC-MOOSE Coupling Tutorial](https://cardinal.cels.anl.gov/tutorials/openmc_solid.html)
+- [OFELIA example code coupling OpenMC with FEniCSx](https://ermete-lab.github.io/MP-OFELIA/intro.html)
